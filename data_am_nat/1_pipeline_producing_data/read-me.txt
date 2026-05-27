@@ -1,0 +1,23 @@
+Pipeline produces the data found in the data folder.
+
+It contains three types of files:
+
+1. Class meta_eco
+   - Defines the meta-ecosystem object and includes the ODE solving.
+   - Output: one simulation for one parameter set.
+
+2. Function for simulation
+   - Runs the ODE solver for a defined period of time (number of years).
+   - Outputs CSV files saved in the data folder.
+   - Output: CSV files calculating persistence, biomass average over a year, maximum indexes, etc.
+   - File naming convention: var1_vs_var2_type_data_info_meta-eco_nb-years.csv
+
+3. Execution script
+   - Executes the function for different variables and meta-ecosystem structures.
+   - Output: a folder in data named by date (e.g., data/date_csv).
+
+Abbreviations:
+- asym: one seasonal ecosystem and one non-seasonal
+- P: primary producer
+- C: consumer
+- fast: half iterations for the non-migratory case
