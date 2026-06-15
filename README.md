@@ -22,12 +22,9 @@ F. Funding Sources
 X
 
 ACCESS INFORMATION
-1. Licenses/restrictions placed on the data or code
-[EXAMPLE] CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
-2. Data derived from other sources
-No
-3. Recommended citation for this data/code archive
-X
+1. Licenses/restrictions placed on the data or code: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+2. Data derived from other sources: No
+3. Recommended citation for this data/code archive: X
 
 DATA & CODE FILE OVERVIEW
 
