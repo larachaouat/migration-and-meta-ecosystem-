@@ -30,7 +30,7 @@ DATA & CODE FILE OVERVIEW
 
 Of 2_data_csv
 
-This data repository consist of 65 data files, 14 code scripts, and this README document, with the following data and code filenames and variables
+This data repository consist of 62 data files, 14 code scripts, and this README document, with the following data and code filenames and variables
 Data files and variables
 In the data folder there is a folder per figure with the csv files corresponding to the figure (one can generate these csv files with the pipeline in folder 1 explained in the Readme in the folder).
 Each csv file contains a biomass/existence/dominance matrix (2D: B x B).
