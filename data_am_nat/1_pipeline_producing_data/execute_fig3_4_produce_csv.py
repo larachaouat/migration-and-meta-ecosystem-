@@ -1,5 +1,5 @@
 
-# Enhanced comments for publication (figures 3 and 4 simulations)
+# figures 3 and 4 simulations
 #
 # Purpose:
 #   Run parameter sweeps for a three-consumer meta-ecosystem model,
@@ -38,12 +38,7 @@
 #   fun_biom_prod3c_f_m.py, fun_biom_prod3c_f_migfix_m.py, fun_biom_prod3c_f_nomig.py
 #   or adjust import paths accordingly.
 #
-# Citation guidance (for the Methods section in a publication):
-#   - State the three model variants and the criteria used to declare a species "present"
-#     (extinction threshold). Report B (grid resolution) and nb_years used for
-#     time integration. Provide the full parameter vector and the parameter ranges
-#     (range1, range2) used in the sweeps. Mention that outputs are saved as CSV
-#     for reproducibility and downstream plotting.
+
 
 import numpy as np
 from fun_biom_prod3c_f_m import calculate_tot_production_3C
