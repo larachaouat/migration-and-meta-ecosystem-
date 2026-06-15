@@ -2,7 +2,7 @@
 # Short description:
 # Plot Fig.6 — load coexistence and production CSVs for a B x B parameter grid,
 # compute summary statistics comparing runs with and without migration, and
-# produce two line-plot PNGs that summarize those differences across one slice
+# produce a line-plot PNGs that summarize those differences across one slice
 # of the parameter grid.
 #
 # Inputs:
