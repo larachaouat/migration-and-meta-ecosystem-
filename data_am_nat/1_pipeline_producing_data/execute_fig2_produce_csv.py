@@ -2,29 +2,39 @@
 # This script runs simulations of a meta-ecosystem model with one consummer for figures 2
 # and writes existence / production results to CSV files 
 #
+#
+# How it works (high level):
+#   For each pair of varying parameters (var1, var2) the script:
+#     - calls a model-evaluation function that performs a B x B grid sweep
+#       over the supplied numerical ranges (range1, range2).
+#     - each call returns:
+#         p_list        : overall species existence/occupancy matrix (2D: B x B)
+#         p1_list       : existence / occupancy for consumer 1 (2D: B x B)
+#         p2_list       : existence / occupancy for consumer 2 (2D: B x B)
+#         b_list        : biomass / total production (multi-dimensional)
+#         max_idx_list  : index of the dominant state/configuration (multi-dimensional)
+#     - b_list and max_idx_list are reshaped to 2-D (rows correspond to grid points)
+#       before being saved to CSV so they are easier to load into plotting scripts.
+#
+# Notes on reproducibility / important parameters:
+#   - threshold : extinction threshold (biomass below this considered extinct)
+#   - B         : grid resolution (number of points per varying parameter)
+#   - nb_years  : length (time) of each simulation run used by the model functions
+#   - X0        : initial state vector expected by the model functions (flattened)
+#   - range1/range2 : numeric vectors (e.g., np.linspace) defining parameter ranges
+#
+# File naming convention for csv files:
+# <var1>vs<var2>_<info>_exist_<nb_years>.csv     -> overall occupancy matrix
+# <var1>vs<var2>_<info>_exist1_<nb_years>.csv    -> consumer 1 occupancy
+# <var1>vs<var2>_<info>_exist2_<nb_years>.csv    -> consumer 2 occupancy
+# <var1>vs<var2>_<info>_prod_<nb_years>.csv      -> production/biomass
+# <var1>vs<var2>_<info>_max_idx_<nb_years>.csv   -> dominant-state index
+#
 # For each combination of two varying parameters, three model variants are
 # evaluated:
 #   - calculate_tot_production_3C_nomig : no migration
 #   - calculate_tot_production_3C       : full model (with migration)
 #   - calculate_tot_production_3C_migfix : migration fixed for some components
-#
-# Each call returns arrays for:
-#   p_list    : overall species existence (or occupancy) matrix
-#   p1_list   : existence / occupancy for consumer 1
-#   p2_list   : existence / occupancy for consumer 2
-#   b_list    : biomass / total production (multi-dimensional)
-
-#
-# The script reshapes b_list and max_idx_list to 2-D and saves all outputs
-# as CSV files named by the varying parameter pair and model info.
-#
-# Notes for reproducibility:
-#   - threshold is used as an extinction threshold when deciding existence
-#   - B is the grid resolution for the varying parameter(s)
-#   - nb_years is the length of each simulation (used by the model functions)
-#   - X0 is the initial state vector for the model
-#   - range1 and range2 are numeric vectors defining the parameter ranges
-#     (typically generated with np.linspace)
 #
 # Usage:
 #   run this script from the directory that contains the imported functions
