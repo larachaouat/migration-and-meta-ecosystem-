@@ -10,16 +10,21 @@ X
 Brief abstract: Migration is a ubiquitous process that links ecosystems with distinct seasonal dynamics, transferring biomass and species interactions across space. Despite being widely altered by global change, studies commonly overlook the interaction of seasonal characteristics and bidirectional migration on species coexistence and biomass stocks across meta-ecosystems. We developed a mathematical model to study how migration interacts with key characteristics of seasonality—amplitude of seasonal variation and length of summer—to influence migrant persistence, coexistence of migratory and non-migratory species, and biomass stocks. Our findings demonstrate that seasonal characteristics mediate the effect of migration on coexistence and biomass stocks across meta-ecosystems. However, the effects strongly depend on migration timing: phenological mismatches can reduce biomass at local and meta-ecosystem scales and lead to the extinction of migratory and non-migratory consumers. Our study highlights how migration and seasonality interact to shape community structure and ecosystem function across scales, emphasizing the importance of system-level approaches for studying ecological outcomes of global change.
 
 B. Originators
-X
+Lara Chaouat (1,2), Florian Altermatt (1,2), Tianna Peller (1,2,3)
+ 1. Department of Aquatic Ecology, Eawag: Swiss Federal Institute of Aquatic Science and Technology, Ueberlandstrasse 133, Dübendorf 8600, Switzerland. 
 
+ 2. Department of Evolutionary Biology and Environmental Studies, University of Zürich, Winterthurerstrasse 190, Zürich 8006, Switzerland. 
+
+ 3. Department of Ecology and Evolutionary Biology, University of Toronto, 25 Wilcocks St, Toronto, Ontario M5S 1A1, Canada.
+    
 C. Contact information
-X
+lara.chaouat@uzh.ch
 
 D. Dates of data collection
 January 2025
 
 F. Funding Sources
-X
+Funding is from the Swiss National Science Foundation (grant 310030 197410)
 
 ACCESS INFORMATION
 1. Licenses/restrictions placed on the data or code: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
